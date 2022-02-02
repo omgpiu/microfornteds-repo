@@ -1,12 +1,11 @@
 import React from 'react'
-import  { mount as Marketing} from 'marketing/Marketing'
+import MarketingApp from "./components/MarketingApp";
+
 
 const App = () => {
     return <div>
         <h2>Hehey</h2>
-        <h2>Hehey</h2>
-        <h2>Hehey</h2>
-        <h1>Hey there</h1>
+        <MarketingApp/>
     </div>
 }
 

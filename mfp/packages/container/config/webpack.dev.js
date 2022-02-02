@@ -14,10 +14,10 @@ const devConfig = {
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
-            remotes:{
-              marketing:'marketing@http://localhost:8081/remoteEntry.js'
+            remotes: {
+                marketing: 'marketing@http://localhost:8081/remoteEntry.js'
             },
-            filename: 'remoteEntry.js',
+            shared: ['react', 'react/dom']
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html'
